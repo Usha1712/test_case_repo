@@ -1,0 +1,35 @@
+{
+    "test_cases": [
+      {
+        "name": "test_add_to_cart",
+        "input": {"cart": [], "item": {"name": "laptop", "price": 1000}},
+        "output": {"name": "laptop", "price": 1000},
+        "execution_time": 5.0
+      },
+      {
+        "name": "test_add_to_cart_duplicate",
+        "input": {"cart": [], "item": {"name": "laptop", "price": 1000}},
+        "output": {"name": "laptop", "price": 1000},
+        "execution_time": 5.0
+      },
+      {
+        "name": "test_apply_discount",
+        "input": {"price": 1000, "discount": 0.1},
+        "output": 900,
+        "execution_time": 3.0
+      },
+      {
+        "name": "test_calculate_total",
+        "input": {"cart": [{"name": "laptop", "price": 1000}, {"name": "mouse", "price": 50}]},
+        "output": 1050,
+        "execution_time": 4.0
+      }
+    ],
+    "execution_logs": [
+      {"name": "test_add_to_cart", "execution_time": 5.0},
+      {"name": "test_add_to_cart_duplicate", "execution_time": 5.0},
+      {"name": "test_apply_discount", "execution_time": 3.0},
+      {"name": "test_calculate_total", "execution_time": 4.0}
+    ]
+  }
+  
